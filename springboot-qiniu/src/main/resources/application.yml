@@ -1,0 +1,11 @@
+server:
+  port: 8099
+  tomcat:
+    uri-encoding: UTF-8
+
+qiniu:
+  accessKey: qt5mk215TWhT42qhhS0izs32sK1g6vKCPttPJwSZ
+  secretKey: p983kprEeRQUOGBhiXtCEhTYQxlX6PphWHepbsFP
+  bucket: litblue
+  zone: huanan
+  path: https://qiniu.litblue.cn

@@ -1,0 +1,27 @@
+server:
+  port: 8099
+
+# h2 数据库的基本配置
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    # 内数据库名为 test
+    url: jdbc:h2:~/jwt
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      # 开启 console 访问
+      enabled: true
+      settings:
+        trace: true
+        web-allow-others: true
+      # 访问路径
+      path: /h2-console
+
